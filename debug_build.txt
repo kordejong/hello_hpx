@@ -1,0 +1,1302 @@
++ build_type=Debug
++ variant=default
++ basename=hello_hpx
++ repository_cache=/home/kor/development/repository
++++ dirname ./debug_build.sh
+++ cd .
+++ pwd -P
++ source_root=/home/kor/development/project/hello_hpx
++ tmp_root=/tmp/hello_hpx/Debug-default
++ build_root=/tmp/hello_hpx/Debug-default/build
+++ dirname /tmp/hello_hpx/Debug-default/build
++ mkdir -p /tmp/hello_hpx/Debug-default
++ mkdir /tmp/hello_hpx/Debug-default/build
++ cmake -DCMAKE_BUILD_TYPE=Debug -DHELLO_HPX_REPOSITORY_CACHE:PATH=/home/kor/development/repository -S /home/kor/development/project/hello_hpx -B /tmp/hello_hpx/Debug-default/build
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The C compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- CMake version: 3.15.4
+-- HPX version: 1.4.0
+-- No vectorization library configured
+-- Native TLS is enabled.
+-- Nice threadlevel is disabled.
+-- Stack traces are enabled.
+-- Compiling with the native toolset
+-- C++ mode used: C++17
+-- Performing Test HPX_WITH_CXX11_ALIAS_TEMPLATES - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_ALIGNAS - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_AUTO - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_CONSTEXPR - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_DECLTYPE - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_SFINAE_EXPRESSION - Success
+-- Performing Test HPX_WITH_CXX11_DEFAULTED_FUNCTIONS - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_DELETED_FUNCTIONS - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_EXPLICIT_CONVERSION_OPERATORS - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_EXPLICIT_VARIADIC_TEMPLATES - Success
+-- Performing Test HPX_WITH_CXX11_EXTENDED_FRIEND_DECLARATIONS - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_FUNCTION_TEMPLATE_DEFAULT_ARGS - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_INLINE_NAMESPACES - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_LAMBDAS - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_NOEXCEPT - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_NULLPTR - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_NSDMI - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_RANGE_BASED_FOR - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_RVALUE_REFERENCES - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_SCOPED_ENUMS - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_STATIC_ASSERT - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_VARIADIC_MACROS - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_VARIADIC_TEMPLATES - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_OVERRIDE - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX11_ARRAY - Success
+-- Looking for __atomic_fetch_add_4 in atomic
+-- Looking for __atomic_fetch_add_4 in atomic - found
+-- Performing Test HPX_WITH_CXX11_ATOMIC - Success
+-- Performing Test HPX_WITH_CXX11_ATOMIC_128BIT - Success
+-- Performing Test HPX_WITH_CXX11_CHRONO - Success
+-- Performing Test HPX_WITH_CXX11_CSTDINT - Success
+-- Performing Test HPX_WITH_CXX11_EXCEPTION_PTR - Success
+-- Performing Test HPX_WITH_CXX11_FORWARD_LIST - Success
+-- Performing Test HPX_WITH_CXX11_STD_INITIALIZER_LIST - Success
+-- Performing Test HPX_WITH_CXX11_IS_BIND_EXPRESSION - Success
+-- Performing Test HPX_WITH_CXX11_IS_PLACEHOLDER - Success
+-- Performing Test HPX_WITH_CXX11_IS_TRIVIALLY_COPYABLE - Success
+-- Performing Test HPX_WITH_CXX11_LOCK_GUARD - Success
+-- Performing Test HPX_WITH_CXX11_STD_QUICK_EXIT - Success
+-- Performing Test HPX_WITH_CXX11_RANDOM - Success
+-- Performing Test HPX_WITH_CXX11_RANGE_ACCESS - Success
+-- Performing Test HPX_WITH_CXX11_REFERENCE_WRAPPER - Success
+-- Performing Test HPX_WITH_CXX11_REGEX - Success
+-- Performing Test HPX_WITH_CXX11_SHARED_PTR - Success
+-- Performing Test HPX_WITH_CXX11_SHARED_PTR_LWG3018 - Success
+-- Performing Test HPX_WITH_CXX11_SHUFFLE - Success
+-- Performing Test HPX_WITH_CXX11_THREAD - Success
+-- Performing Test HPX_WITH_CXX11_TO_STRING - Success
+-- Performing Test HPX_WITH_CXX11_UNIQUE_LOCK - Success
+-- Performing Test HPX_WITH_CXX11_UNIQUE_PTR - Success
+-- Performing Test HPX_WITH_CXX11_UNORDERED_MAP - Success
+-- Performing Test HPX_WITH_CXX11_UNORDERED_SET - Success
+-- Performing Test HPX_WITH_CXX11_THREAD_LOCAL - Success
+-- Performing Test HPX_WITH_CXX11_NORETURN_ATTRIBUTE - Success
+-- Performing Test HPX_WITH_CXX14_CONSTEXPR - Success
+-- Performing Test HPX_WITH_CXX14_LAMBDAS - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX14_INTEGER_SEQUENCE - Success
+-- Performing Test HPX_WITH_CXX14_IS_FINAL - Success
+-- Performing Test HPX_WITH_CXX14_IS_NULL_POINTER - Success
+-- Performing Test HPX_WITH_CXX14_RESULT_OF_SFINAE - Success
+-- Performing Test HPX_WITH_CXX14_VARIABLE_TEMPLATES - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX14_DEPRECATED_ATTRIBUTE - Success
+-- Performing Test HPX_WITH_CXX14_RETURN_TYPE_DEDUCTION - Success (cmake feature test)
+-- Performing Test HPX_WITH_CXX17_FILESYSTEM - Failed
+-- Performing Test HPX_WITH_CXX17_FOLD_EXPRESSIONS - Success
+-- Performing Test HPX_WITH_CXX17_FALLTHROUGH_ATTRIBUTE - Success
+-- Performing Test HPX_WITH_CXX17_HARDWARE_DESTRUCTIVE_INTERFERENCE_SIZE - Failed
+-- Performing Test HPX_WITH_CXX17_STRUCTURED_BINDINGS - Success
+-- Performing Test HPX_WITH_CXX17_IF_CONSTEXPR - Success
+-- Performing Test HPX_WITH_CXX17_ALIGNED_NEW - Success
+-- Performing Test HPX_WITH_CXX17_STD_IN_PLACE_TYPE_T - Success
+-- Performing Test HPX_WITH_MM_PREFETCH - Success
+-- Performing Test HPX_WITH_STABLE_INPLACE_MERGE - Success
+-- Performing Test HPX_WITH_UNISTD_H - Success
+-- Performing Test HPX_WITH_CXX_FLAG_PTHREAD
+-- Performing Test HPX_WITH_CXX_FLAG_PTHREAD - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WALL
+-- Performing Test HPX_WITH_CXX_FLAG_WALL - Success
+-- Performing Test HPX_WITH_C_FLAG_WALL
+-- Performing Test HPX_WITH_C_FLAG_WALL - Success
+-- Performing Test HPX_WITH_Fortran_FLAG_WALL
+-- Performing Test HPX_WITH_Fortran_FLAG_WALL - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WEXTRA
+-- Performing Test HPX_WITH_CXX_FLAG_WEXTRA - Success
+-- Performing Test HPX_WITH_C_FLAG_WEXTRA
+-- Performing Test HPX_WITH_C_FLAG_WEXTRA - Success
+-- Performing Test HPX_WITH_Fortran_FLAG_WEXTRA
+-- Performing Test HPX_WITH_Fortran_FLAG_WEXTRA - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_UNUSED_LOCAL_TYPEDEFS
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_UNUSED_LOCAL_TYPEDEFS - Success
+-- Performing Test HPX_WITH_C_FLAG_WNO_UNUSED_LOCAL_TYPEDEFS
+-- Performing Test HPX_WITH_C_FLAG_WNO_UNUSED_LOCAL_TYPEDEFS - Success
+-- Performing Test HPX_WITH_Fortran_FLAG_WNO_UNUSED_LOCAL_TYPEDEFS
+-- Performing Test HPX_WITH_Fortran_FLAG_WNO_UNUSED_LOCAL_TYPEDEFS - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_STRICT_ALIASING
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_STRICT_ALIASING - Success
+-- Performing Test HPX_WITH_C_FLAG_WNO_STRICT_ALIASING
+-- Performing Test HPX_WITH_C_FLAG_WNO_STRICT_ALIASING - Success
+-- Performing Test HPX_WITH_Fortran_FLAG_WNO_STRICT_ALIASING
+-- Performing Test HPX_WITH_Fortran_FLAG_WNO_STRICT_ALIASING - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_SIGN_PROMO
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_SIGN_PROMO - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_ATTRIBUTES
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_ATTRIBUTES - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_CAST_ALIGN
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_CAST_ALIGN - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_UNUSED_PARAMETER
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_UNUSED_PARAMETER - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WFORMAT_2
+-- Performing Test HPX_WITH_CXX_FLAG_WFORMAT_2 - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_FORMAT_NONLITERAL
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_FORMAT_NONLITERAL - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WINIT_SELF
+-- Performing Test HPX_WITH_CXX_FLAG_WINIT_SELF - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WDOUBLE_PROMOTION
+-- Performing Test HPX_WITH_CXX_FLAG_WDOUBLE_PROMOTION - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WCAST_QUAL
+-- Performing Test HPX_WITH_CXX_FLAG_WCAST_QUAL - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WCAST_ALIGN
+-- Performing Test HPX_WITH_CXX_FLAG_WCAST_ALIGN - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_TRAMPOLINES
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_TRAMPOLINES - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_PARENTHESES
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_PARENTHESES - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_REORDER
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_REORDER - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_RETURN_TYPE
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_RETURN_TYPE - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_SEQUENCE_POINT
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_SEQUENCE_POINT - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_UNINITIALIZED
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_UNINITIALIZED - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_FORMAT
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_FORMAT - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_MISSING_BRACES
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_MISSING_BRACES - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_SIGN_COMPARE
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_SIGN_COMPARE - Success
+-- Performing Test HPX_WITH_CXX_FLAG_FDIAGNOSTICS_SHOW_OPTION
+-- Performing Test HPX_WITH_CXX_FLAG_FDIAGNOSTICS_SHOW_OPTION - Success
+-- Performing Test HPX_WITH_C_FLAG_FDIAGNOSTICS_SHOW_OPTION
+-- Performing Test HPX_WITH_C_FLAG_FDIAGNOSTICS_SHOW_OPTION - Success
+-- Performing Test HPX_WITH_Fortran_FLAG_FDIAGNOSTICS_SHOW_OPTION
+-- Performing Test HPX_WITH_Fortran_FLAG_FDIAGNOSTICS_SHOW_OPTION - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_VLA
+-- Performing Test HPX_WITH_CXX_FLAG_WERROR_VLA - Success
+-- Performing Test HPX_WITH_C_FLAG_WERROR_RETURN_TYPE
+-- Performing Test HPX_WITH_C_FLAG_WERROR_RETURN_TYPE - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_UNUSED_BUT_SET_PARAMETER
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_UNUSED_BUT_SET_PARAMETER - Success
+-- Performing Test HPX_WITH_C_FLAG_WNO_UNUSED_BUT_SET_PARAMETER
+-- Performing Test HPX_WITH_C_FLAG_WNO_UNUSED_BUT_SET_PARAMETER - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_UNUSED_BUT_SET_VARIABLE
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_UNUSED_BUT_SET_VARIABLE - Success
+-- Performing Test HPX_WITH_C_FLAG_WNO_UNUSED_BUT_SET_VARIABLE
+-- Performing Test HPX_WITH_C_FLAG_WNO_UNUSED_BUT_SET_VARIABLE - Success
+-- Performing Test HPX_WITH_C_FLAG_WERROR_UNINITIALIZED
+-- Performing Test HPX_WITH_C_FLAG_WERROR_UNINITIALIZED - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_MAYBE_UNINITIALIZED
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_MAYBE_UNINITIALIZED - Success
+-- Performing Test HPX_WITH_C_FLAG_WNO_MAYBE_UNINITIALIZED
+-- Performing Test HPX_WITH_C_FLAG_WNO_MAYBE_UNINITIALIZED - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_SYNC_NAND
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_SYNC_NAND - Success
+-- Performing Test HPX_WITH_C_FLAG_WNO_SYNC_NAND
+-- Performing Test HPX_WITH_C_FLAG_WNO_SYNC_NAND - Success
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_DELETE_NON_VIRTUAL_DTOR
+-- Performing Test HPX_WITH_CXX_FLAG_WNO_DELETE_NON_VIRTUAL_DTOR - Success
+-- Performing Test WITH_LINKER_FLAG_WL__Z_DEFS
+-- Performing Test WITH_LINKER_FLAG_WL__Z_DEFS - Success
+-- Performing Test HPX_WITH_CXX_FLAG_FVISIBILITY_HIDDEN
+-- Performing Test HPX_WITH_CXX_FLAG_FVISIBILITY_HIDDEN - Success
+-- Performing Test HPX_WITH_C_FLAG_FVISIBILITY_HIDDEN
+-- Performing Test HPX_WITH_C_FLAG_FVISIBILITY_HIDDEN - Success
+-- Performing Test HPX_WITH_Fortran_FLAG_FVISIBILITY_HIDDEN
+-- Performing Test HPX_WITH_Fortran_FLAG_FVISIBILITY_HIDDEN - Success
+-- Performing Test WITH_LINKER_FLAG_FVISIBILITY_HIDDEN
+-- Performing Test WITH_LINKER_FLAG_FVISIBILITY_HIDDEN - Success
+-- Performing Test HPX_WITH_RDTSC - Success
+-- Performing Test HPX_WITH_RDTSCP - Success
+-- Architecture detected: x86_64
+-- Found Boost: /usr/include (found suitable version "1.65.1", minimum required is "1.61")  
+-- Found Boost: /usr/include (found suitable version "1.65.1", minimum required is "1.61") found components:  system 
+-- Found TCMalloc: /usr/lib/x86_64-linux-gnu/libtcmalloc_minimal.so  
+-- Using tcmalloc allocator.
+-- Found Hwloc: /usr/lib/x86_64-linux-gnu/libhwloc.so  
+-- Found Git: /usr/bin/git (found version "2.17.1") 
+-- GIT commit is 435f935523164a482f3eb8578565973f3c9f41e0.
+-- Configuring modules:
+--   algorithms
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/algorithms/CMakeLists.txt:126 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/algorithms/CMakeLists.txt:126 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/algorithms/CMakeLists.txt:126 (add_hpx_module)
+
+
+--   allocator_support
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/allocator_support/CMakeLists.txt:22 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/allocator_support/CMakeLists.txt:22 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/allocator_support/CMakeLists.txt:22 (add_hpx_module)
+
+
+--   assertion
+--   basic_execution
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/basic_execution/CMakeLists.txt:30 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/basic_execution/CMakeLists.txt:30 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/basic_execution/CMakeLists.txt:30 (add_hpx_module)
+
+
+--   cache
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/cache/CMakeLists.txt:46 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/cache/CMakeLists.txt:46 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/cache/CMakeLists.txt:46 (add_hpx_module)
+
+
+--   checkpoint
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/checkpoint/CMakeLists.txt:24 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/checkpoint/CMakeLists.txt:24 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/checkpoint/CMakeLists.txt:24 (add_hpx_module)
+
+
+--   collectives
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/collectives/CMakeLists.txt:45 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/collectives/CMakeLists.txt:45 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/collectives/CMakeLists.txt:45 (add_hpx_module)
+
+
+--   compute
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/compute/CMakeLists.txt:40 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/compute/CMakeLists.txt:40 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/compute/CMakeLists.txt:40 (add_hpx_module)
+
+
+--   compute_cuda
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/compute_cuda/CMakeLists.txt:40 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/compute_cuda/CMakeLists.txt:40 (add_hpx_module)
+
+
+--   concepts
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/concepts/CMakeLists.txt:24 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/concepts/CMakeLists.txt:24 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/concepts/CMakeLists.txt:24 (add_hpx_module)
+
+
+--   concurrency
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/concurrency/CMakeLists.txt:45 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/concurrency/CMakeLists.txt:45 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/concurrency/CMakeLists.txt:45 (add_hpx_module)
+
+
+--   config
+--   coroutines
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/coroutines/CMakeLists.txt:65 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/coroutines/CMakeLists.txt:65 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/coroutines/CMakeLists.txt:65 (add_hpx_module)
+
+
+--   datastructures
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/datastructures/CMakeLists.txt:41 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/datastructures/CMakeLists.txt:41 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/datastructures/CMakeLists.txt:41 (add_hpx_module)
+
+
+--     Adapted hpx::util::tuple to be usable with std::tuple
+--   debugging
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/debugging/CMakeLists.txt:20 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/debugging/CMakeLists.txt:20 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/debugging/CMakeLists.txt:20 (add_hpx_module)
+
+
+--   errors
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/errors/CMakeLists.txt:40 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/errors/CMakeLists.txt:40 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/errors/CMakeLists.txt:40 (add_hpx_module)
+
+
+--   execution
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/execution/CMakeLists.txt:69 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/execution/CMakeLists.txt:69 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/execution/CMakeLists.txt:69 (add_hpx_module)
+
+
+--   filesystem
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/filesystem/CMakeLists.txt:17 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/filesystem/CMakeLists.txt:17 (add_hpx_module)
+
+
+--   format
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/format/CMakeLists.txt:27 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/format/CMakeLists.txt:27 (add_hpx_module)
+
+
+--   functional
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/functional/CMakeLists.txt:66 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/functional/CMakeLists.txt:66 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/functional/CMakeLists.txt:66 (add_hpx_module)
+
+
+--   hardware
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/hardware/CMakeLists.txt:45 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/hardware/CMakeLists.txt:45 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/hardware/CMakeLists.txt:45 (add_hpx_module)
+
+
+--   hashing
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/hashing/CMakeLists.txt:22 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/hashing/CMakeLists.txt:22 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/hashing/CMakeLists.txt:22 (add_hpx_module)
+
+
+--   iterator_support
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/iterator_support/CMakeLists.txt:33 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/iterator_support/CMakeLists.txt:33 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/iterator_support/CMakeLists.txt:33 (add_hpx_module)
+
+
+--   logging
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/logging/CMakeLists.txt:92 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/logging/CMakeLists.txt:92 (add_hpx_module)
+
+
+--   memory
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/memory/CMakeLists.txt:25 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/memory/CMakeLists.txt:25 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/memory/CMakeLists.txt:25 (add_hpx_module)
+
+
+--   plugin
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/plugin/CMakeLists.txt:44 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/plugin/CMakeLists.txt:44 (add_hpx_module)
+
+
+--   preprocessor
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/preprocessor/CMakeLists.txt:36 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/preprocessor/CMakeLists.txt:36 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/preprocessor/CMakeLists.txt:36 (add_hpx_module)
+
+
+--   program_options
+--   resiliency
+--   resource_partitioner
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/resource_partitioner/CMakeLists.txt:31 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/resource_partitioner/CMakeLists.txt:31 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/resource_partitioner/CMakeLists.txt:31 (add_hpx_module)
+
+
+--   segmented_algorithms
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/segmented_algorithms/CMakeLists.txt:34 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/segmented_algorithms/CMakeLists.txt:34 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/segmented_algorithms/CMakeLists.txt:34 (add_hpx_module)
+
+
+--   serialization
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/serialization/CMakeLists.txt:134 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/serialization/CMakeLists.txt:134 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/serialization/CMakeLists.txt:134 (add_hpx_module)
+
+
+--     Enabled serialization of Boost types
+--   statistics
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/statistics/CMakeLists.txt:34 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/statistics/CMakeLists.txt:34 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/statistics/CMakeLists.txt:34 (add_hpx_module)
+
+
+--   testing
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/testing/CMakeLists.txt:27 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/testing/CMakeLists.txt:27 (add_hpx_module)
+
+
+--   thread_support
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/thread_support/CMakeLists.txt:30 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/thread_support/CMakeLists.txt:30 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/thread_support/CMakeLists.txt:30 (add_hpx_module)
+
+
+--   threadmanager
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/threadmanager/CMakeLists.txt:24 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/threadmanager/CMakeLists.txt:24 (add_hpx_module)
+
+
+--   timing
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/timing/CMakeLists.txt:34 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/timing/CMakeLists.txt:34 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/timing/CMakeLists.txt:34 (add_hpx_module)
+
+
+--   topology
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/topology/CMakeLists.txt:30 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/topology/CMakeLists.txt:30 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/topology/CMakeLists.txt:30 (add_hpx_module)
+
+
+--   type_support
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/type_support/CMakeLists.txt:40 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/type_support/CMakeLists.txt:40 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/type_support/CMakeLists.txt:40 (add_hpx_module)
+
+
+--   util
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/global_module_header.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:102 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/util/CMakeLists.txt:28 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.hpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:110 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/util/CMakeLists.txt:28 (add_hpx_module)
+
+
+CMake Error: File /home/kor/development/project/hello_hpx/cmake/templates/force_linking.cpp.in does not exist.
+CMake Error at /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/cmake/HPX_AddModule.cmake:115 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /tmp/hello_hpx/Debug-default/build/_deps/hpx-src/libs/util/CMakeLists.txt:28 (add_hpx_module)
+
+
+-- Configuring components:
+--   component_storage
+--   containers
+--   iostreams
+--   performance_counters
+--   process
+-- Found PythonInterp: /home/kor/miniconda2/bin/python (found version "2.7.16") 
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+-- 
+-- Configuration summary:
+--   HPX_WITH_ACTION_BASE_COMPATIBILITY=ON
+--   HPX_WITH_AGAS_DUMP_REFCNT_ENTRIES=OFF
+--   HPX_WITH_APEX=OFF
+--   HPX_WITH_ATTACH_DEBUGGER_ON_TEST_FAILURE=OFF
+--   HPX_WITH_AUTOMATIC_SERIALIZATION_REGISTRATION=ON
+--   HPX_WITH_BENCHMARK_SCRIPTS_PATH=/tmp/hello_hpx/Debug-default/build/_deps/hpx-build/scripts
+--   HPX_WITH_BUILD_BINARY_PACKAGE=OFF
+--   HPX_WITH_COMPILER_WARNINGS=ON
+--   HPX_WITH_COMPILER_WARNINGS_AS_ERRORS=OFF
+--   HPX_WITH_COMPILE_ONLY_TESTS=ON
+--   HPX_WITH_COMPRESSION_BZIP2=OFF
+--   HPX_WITH_COMPRESSION_SNAPPY=OFF
+--   HPX_WITH_COMPRESSION_ZLIB=OFF
+--   HPX_WITH_COROUTINE_COUNTERS=OFF
+--   HPX_WITH_CUDA=OFF
+--   HPX_WITH_CUDA_CLANG=OFF
+--   HPX_WITH_CXX14_RETURN_TYPE_DEDUCTION=TRUE
+--   HPX_WITH_DATAPAR_VC=OFF
+--   HPX_WITH_DEFAULT_TARGETS=ON
+--   HPX_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_WITH_DISABLED_SIGNAL_EXCEPTION_HANDLERS=OFF
+--   HPX_WITH_DOCUMENTATION=OFF
+--   HPX_WITH_DYNAMIC_HPX_MAIN=ON
+--   HPX_WITH_EXAMPLES=ON
+--   HPX_WITH_EXAMPLES_HDF5=OFF
+--   HPX_WITH_EXAMPLES_OPENMP=OFF
+--   HPX_WITH_EXAMPLES_QT4=OFF
+--   HPX_WITH_EXAMPLES_QTHREADS=OFF
+--   HPX_WITH_EXAMPLES_TBB=OFF
+--   HPX_WITH_EXECUTABLE_PREFIX=
+--   HPX_WITH_FAIL_COMPILE_TESTS=ON
+--   HPX_WITH_FAULT_TOLERANCE=OFF
+--   HPX_WITH_FORTRAN=OFF
+--   HPX_WITH_FULL_RPATH=ON
+--   HPX_WITH_GCC_VERSION_CHECK=ON
+--   HPX_WITH_GENERIC_CONTEXT_COROUTINES=OFF
+--   HPX_WITH_GOOGLE_PERFTOOLS=OFF
+--   HPX_WITH_HCC=OFF
+--   HPX_WITH_HIDDEN_VISIBILITY=ON
+--   HPX_WITH_HPXMP=OFF
+--   HPX_WITH_IO_COUNTERS=ON
+--   HPX_WITH_IO_POOL=ON
+--   HPX_WITH_ITTNOTIFY=OFF
+--   HPX_WITH_LOGGING=ON
+--   HPX_WITH_MALLOC=tcmalloc
+--   HPX_WITH_MAX_CPU_COUNT=64
+--   HPX_WITH_MAX_NUMA_DOMAIN_COUNT=8
+--   HPX_WITH_MORE_THAN_64_THREADS=
+--   HPX_WITH_NATIVE_TLS=ON
+--   HPX_WITH_NETWORKING=ON
+--   HPX_WITH_NICE_THREADLEVEL=OFF
+--   HPX_WITH_PAPI=OFF
+--   HPX_WITH_PARCELPORT_ACTION_COUNTERS=OFF
+--   HPX_WITH_PARCELPORT_LIBFABRIC=OFF
+--   HPX_WITH_PARCELPORT_MPI=OFF
+--   HPX_WITH_PARCELPORT_MPI_ENV=MV2_COMM_WORLD_RANK PMI_RANK OMPI_COMM_WORLD_SIZE ALPS_APP_PE PMIX_RANK
+--   HPX_WITH_PARCELPORT_MPI_MULTITHREADED=ON
+--   HPX_WITH_PARCELPORT_TCP=ON
+--   HPX_WITH_PARCELPORT_VERBS=OFF
+--   HPX_WITH_PARCEL_COALESCING=ON
+--   HPX_WITH_PARCEL_PROFILING=OFF
+--   HPX_WITH_PSEUDO_DEPENDENCIES=ON
+--   HPX_WITH_REGISTER_THREAD_COMPATIBILITY=ON
+--   HPX_WITH_RPM=OFF
+--   HPX_WITH_RUN_MAIN_EVERYWHERE=OFF
+--   HPX_WITH_SANITIZERS=OFF
+--   HPX_WITH_SCHEDULER_LOCAL_STORAGE=OFF
+--   HPX_WITH_SPINLOCK_DEADLOCK_DETECTION=OFF
+--   HPX_WITH_SPINLOCK_POOL_NUM=128
+--   HPX_WITH_STACKOVERFLOW_DETECTION=ON
+--   HPX_WITH_STACKTRACES=ON
+--   HPX_WITH_STATIC_LINKING=OFF
+--   HPX_WITH_SWAP_CONTEXT_EMULATION=OFF
+--   HPX_WITH_SYCL=OFF
+--   HPX_WITH_TESTS=ON
+--   HPX_WITH_TESTS_BENCHMARKS=ON
+--   HPX_WITH_TESTS_DEBUG_LOG=OFF
+--   HPX_WITH_TESTS_DEBUG_LOG_DESTINATION=cout
+--   HPX_WITH_TESTS_EXAMPLES=ON
+--   HPX_WITH_TESTS_EXTERNAL_BUILD=ON
+--   HPX_WITH_TESTS_HEADERS=OFF
+--   HPX_WITH_TESTS_REGRESSIONS=ON
+--   HPX_WITH_TESTS_UNIT=ON
+--   HPX_WITH_THREAD_BACKTRACE_DEPTH=5
+--   HPX_WITH_THREAD_BACKTRACE_ON_SUSPENSION=OFF
+--   HPX_WITH_THREAD_CREATION_AND_CLEANUP_RATES=OFF
+--   HPX_WITH_THREAD_CUMULATIVE_COUNTS=ON
+--   HPX_WITH_THREAD_DEBUG_INFO=OFF
+--   HPX_WITH_THREAD_DESCRIPTION_FULL=OFF
+--   HPX_WITH_THREAD_GUARD_PAGE=ON
+--   HPX_WITH_THREAD_IDLE_RATES=OFF
+--   HPX_WITH_THREAD_LOCAL_STORAGE=OFF
+--   HPX_WITH_THREAD_MANAGER_IDLE_BACKOFF=ON
+--   HPX_WITH_THREAD_QUEUE_WAITTIME=OFF
+--   HPX_WITH_THREAD_SCHEDULERS=all
+--   HPX_WITH_THREAD_STACK_MMAP=ON
+--   HPX_WITH_THREAD_STEALING_COUNTS=OFF
+--   HPX_WITH_THREAD_TARGET_ADDRESS=OFF
+--   HPX_WITH_TIMER_POOL=ON
+--   HPX_WITH_TOOLS=OFF
+--   HPX_WITH_TUPLE_RVALUE_SWAP=ON
+--   HPX_WITH_VALGRIND=OFF
+--   HPX_WITH_VERIFY_LOCKS=OFF
+--   HPX_WITH_VERIFY_LOCKS_BACKTRACE=OFF
+--   HPX_WITH_VERIFY_LOCKS_GLOBALLY=OFF
+--   HPX_WITH_VIM_YCM=OFF
+--   HPX_WITH_ZERO_COPY_SERIALIZATION_THRESHOLD=128
+-- 
+-- Module configuration summary (algorithms):
+--   HPX_ALGORITHMS_WITH_COMPATIBILITY_HEADERS=OFF
+--   HPX_ALGORITHMS_WITH_DEPRECATION_WARNINGS=OFF
+--   HPX_ALGORITHMS_WITH_TESTS=ON
+-- 
+-- Module configuration summary (allocator_support):
+--   HPX_ALLOCATOR_SUPPORT_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_ALLOCATOR_SUPPORT_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_ALLOCATOR_SUPPORT_WITH_TESTS=ON
+-- 
+-- Module configuration summary (assertion):
+--   HPX_ASSERTION_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_ASSERTION_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_ASSERTION_WITH_TESTS=ON
+-- 
+-- Module configuration summary (basic_execution):
+--   HPX_BASIC_EXECUTION_WITH_COMPATIBILITY_HEADERS=OFF
+--   HPX_BASIC_EXECUTION_WITH_DEPRECATION_WARNINGS=OFF
+--   HPX_BASIC_EXECUTION_WITH_TESTS=ON
+-- 
+-- Module configuration summary (cache):
+--   HPX_CACHE_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_CACHE_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_CACHE_WITH_TESTS=ON
+-- 
+-- Module configuration summary (checkpoint):
+--   HPX_CHECKPOINT_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_CHECKPOINT_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_CHECKPOINT_WITH_TESTS=ON
+-- 
+-- Module configuration summary (collectives):
+--   HPX_COLLECTIVES_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_COLLECTIVES_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_COLLECTIVES_WITH_TESTS=ON
+-- 
+-- Module configuration summary (compute):
+--   HPX_COMPUTE_WITH_COMPATIBILITY_HEADERS=OFF
+--   HPX_COMPUTE_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_COMPUTE_WITH_TESTS=ON
+-- 
+-- Module configuration summary (compute_cuda):
+--   HPX_COMPUTE_CUDA_WITH_COMPATIBILITY_HEADERS=OFF
+--   HPX_COMPUTE_CUDA_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_COMPUTE_CUDA_WITH_TESTS=ON
+-- 
+-- Module configuration summary (concepts):
+--   HPX_CONCEPTS_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_CONCEPTS_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_CONCEPTS_WITH_TESTS=ON
+-- 
+-- Module configuration summary (concurrency):
+--   HPX_CONCURRENCY_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_CONCURRENCY_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_CONCURRENCY_WITH_TESTS=ON
+-- 
+-- Module configuration summary (config):
+--   HPX_CONFIG_WITH_COMPATIBILITY_HEADERS=OFF
+--   HPX_CONFIG_WITH_DEPRECATION_WARNINGS=OFF
+--   HPX_CONFIG_WITH_TESTS=ON
+-- 
+-- Module configuration summary (coroutines):
+--   HPX_COROUTINES_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_COROUTINES_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_COROUTINES_WITH_TESTS=ON
+-- 
+-- Module configuration summary (datastructures):
+--   HPX_DATASTRUCTURES_WITH_ADAPT_STD_TUPLE=ON
+--   HPX_DATASTRUCTURES_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_DATASTRUCTURES_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_DATASTRUCTURES_WITH_TESTS=ON
+-- 
+-- Module configuration summary (debugging):
+--   HPX_DEBUGGING_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_DEBUGGING_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_DEBUGGING_WITH_TESTS=ON
+-- 
+-- Module configuration summary (errors):
+--   HPX_ERRORS_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_ERRORS_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_ERRORS_WITH_TESTS=ON
+-- 
+-- Module configuration summary (execution):
+--   HPX_EXECUTION_WITH_COMPATIBILITY_HEADERS=OFF
+--   HPX_EXECUTION_WITH_DEPRECATION_WARNINGS=OFF
+--   HPX_EXECUTION_WITH_TESTS=ON
+-- 
+-- Module configuration summary (filesystem):
+--   HPX_FILESYSTEM_WITH_BOOST_FILESYSTEM_COMPATIBILITY=ON
+--   HPX_FILESYSTEM_WITH_COMPATIBILITY_HEADERS=OFF
+--   HPX_FILESYSTEM_WITH_DEPRECATION_WARNINGS=OFF
+--   HPX_FILESYSTEM_WITH_TESTS=ON
+-- 
+-- Module configuration summary (format):
+--   HPX_FORMAT_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_FORMAT_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_FORMAT_WITH_TESTS=ON
+-- 
+-- Module configuration summary (functional):
+--   HPX_FUNCTIONAL_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_FUNCTIONAL_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_FUNCTIONAL_WITH_TESTS=ON
+-- 
+-- Module configuration summary (hardware):
+--   HPX_HARDWARE_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_HARDWARE_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_HARDWARE_WITH_TESTS=ON
+-- 
+-- Module configuration summary (hashing):
+--   HPX_HASHING_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_HASHING_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_HASHING_WITH_TESTS=ON
+-- 
+-- Module configuration summary (iterator_support):
+--   HPX_ITERATOR_SUPPORT_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_ITERATOR_SUPPORT_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_ITERATOR_SUPPORT_WITH_TESTS=ON
+-- 
+-- Module configuration summary (logging):
+--   HPX_LOGGING_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_LOGGING_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_LOGGING_WITH_TESTS=ON
+-- 
+-- Module configuration summary (memory):
+--   HPX_MEMORY_WITH_COMPATIBILITY_HEADERS=OFF
+--   HPX_MEMORY_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_MEMORY_WITH_TESTS=ON
+-- 
+-- Module configuration summary (plugin):
+--   HPX_PLUGIN_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_PLUGIN_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_PLUGIN_WITH_TESTS=ON
+-- 
+-- Module configuration summary (preprocessor):
+--   HPX_PREPROCESSOR_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_PREPROCESSOR_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_PREPROCESSOR_WITH_TESTS=ON
+-- 
+-- Module configuration summary (program_options):
+--   HPX_PROGRAM_OPTIONS_WITH_BOOST_PROGRAM_OPTIONS_COMPATIBILITY=ON
+--   HPX_PROGRAM_OPTIONS_WITH_COMPATIBILITY_HEADERS=OFF
+--   HPX_PROGRAM_OPTIONS_WITH_DEPRECATION_WARNINGS=OFF
+--   HPX_PROGRAM_OPTIONS_WITH_TESTS=ON
+-- 
+-- Module configuration summary (resiliency):
+--   HPX_RESILIENCY_WITH_COMPATIBILITY_HEADERS=OFF
+--   HPX_RESILIENCY_WITH_DEPRECATION_WARNINGS=OFF
+--   HPX_RESILIENCY_WITH_TESTS=ON
+-- 
+-- Module configuration summary (resource_partitioner):
+--   HPX_RESOURCE_PARTITIONER_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_RESOURCE_PARTITIONER_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_RESOURCE_PARTITIONER_WITH_TESTS=ON
+-- 
+-- Module configuration summary (segmented_algorithms):
+--   HPX_SEGMENTED_ALGORITHMS_WITH_COMPATIBILITY_HEADERS=OFF
+--   HPX_SEGMENTED_ALGORITHMS_WITH_DEPRECATION_WARNINGS=OFF
+--   HPX_SEGMENTED_ALGORITHMS_WITH_TESTS=ON
+-- 
+-- Module configuration summary (serialization):
+--   HPX_SERIALIZATION_WITH_BOOST_TYPES=ON
+--   HPX_SERIALIZATION_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_SERIALIZATION_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_SERIALIZATION_WITH_TESTS=ON
+-- 
+-- Module configuration summary (statistics):
+--   HPX_STATISTICS_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_STATISTICS_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_STATISTICS_WITH_TESTS=ON
+-- 
+-- Module configuration summary (testing):
+--   HPX_TESTING_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_TESTING_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_TESTING_WITH_TESTS=ON
+-- 
+-- Module configuration summary (thread_support):
+--   HPX_THREAD_SUPPORT_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_THREAD_SUPPORT_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_THREAD_SUPPORT_WITH_TESTS=ON
+-- 
+-- Module configuration summary (threadmanager):
+--   HPX_THREADMANAGER_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_THREADMANAGER_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_THREADMANAGER_WITH_TESTS=ON
+-- 
+-- Module configuration summary (timing):
+--   HPX_TIMING_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_TIMING_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_TIMING_WITH_TESTS=ON
+-- 
+-- Module configuration summary (topology):
+--   HPX_TOPOLOGY_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_TOPOLOGY_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_TOPOLOGY_WITH_TESTS=ON
+-- 
+-- Module configuration summary (type_support):
+--   HPX_TYPE_SUPPORT_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_TYPE_SUPPORT_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_TYPE_SUPPORT_WITH_TESTS=ON
+-- 
+-- Module configuration summary (util):
+--   HPX_UTIL_WITH_COMPATIBILITY_HEADERS=ON
+--   HPX_UTIL_WITH_DEPRECATION_WARNINGS=ON
+--   HPX_UTIL_WITH_TESTS=ON
+-- Installing: /tmp/hello_hpx/Debug-default/build/CMakeFiles/HPXCacheVariables.cmake
+
+HPX will be installed to /usr/local
+
+-- Configuring incomplete, errors occurred!
+See also "/tmp/hello_hpx/Debug-default/build/CMakeFiles/CMakeOutput.log".
+See also "/tmp/hello_hpx/Debug-default/build/CMakeFiles/CMakeError.log".

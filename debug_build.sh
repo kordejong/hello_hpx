@@ -21,4 +21,4 @@ cmake \
     -DHELLO_HPX_REPOSITORY_CACHE:PATH=$repository_cache \
     -S $source_root \
     -B $build_root
-# echo cmake --build $build_root
+cmake --build $build_root

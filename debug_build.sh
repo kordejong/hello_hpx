@@ -3,8 +3,6 @@ set -e
 set -x
 
 build_type=Debug
-variant=default
 
 source build_common.sh
-
-rebuild_project
+rebuild_project $build_type default ""

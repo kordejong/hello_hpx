@@ -1,31 +1,37 @@
 #!/usr/bin/env bash
 
-# Requirements:
-# - build_type
-# - variant
-
 basename=hello_hpx
 repository_cache=$HOME/development/repository  # Optional
-
-
 source_root="$(cd "$(dirname "$BASH_SOURCE")"; pwd -P)"
-tmp_root=${TMPDIR:-/tmp}/$basename/$build_type-$variant
-build_root=$tmp_root/build
 
 
 function remove_build()
 {
+    build_type=$1
+    variant=$2
+
+    tmp_root=${TMPDIR:-/tmp}/$basename/$build_type-$variant
+    build_root=$tmp_root/build
+
     rm -fr $build_root
 }
 
 
 function build_project()
 {
+    build_type=$1
+    variant=$2
+    cmake_flags=$3
+
+    tmp_root=${TMPDIR:-/tmp}/$basename/$build_type-$variant
+    build_root=$tmp_root/build
+
     mkdir -p `dirname $build_root`
     mkdir $build_root
     cmake \
         -DCMAKE_BUILD_TYPE=$build_type \
         -DHELLO_HPX_REPOSITORY_CACHE:PATH=$repository_cache \
+        $cmake_flags \
         -S $source_root \
         -B $build_root
     cmake --build $build_root
@@ -34,6 +40,6 @@ function build_project()
 
 function rebuild_project()
 {
-    remove_build
-    build_project
+    remove_build $*
+    build_project $*
 }

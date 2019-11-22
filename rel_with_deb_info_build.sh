@@ -2,7 +2,7 @@
 set -e
 set -x
 
-build_type=Debug
+build_type=RelWithDebInfo
 variant=default
 
 source build_common.sh

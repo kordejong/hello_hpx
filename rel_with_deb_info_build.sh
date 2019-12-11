@@ -10,6 +10,6 @@ rebuild_project $build_type papi "-DHPX_WITH_PAPI:BOOL=ON"
 rebuild_project $build_type apex "
     -DHPX_WITH_APEX:BOOL=ON
     -DHPX_WITH_APEX_TAG:STRING=develop
+    -DAPEX_WITH_OTF2:BOOL=ON
+    -DHELLO_HPX_BUILD_OTF2:BOOL=ON
 "
-# -DAPEX_WITH_OTF2:BOOL=ON
-# -DACTIVEHARMONY_ROOT=<path/to/otf2>

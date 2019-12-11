@@ -21,7 +21,7 @@ function build_project()
 {
     build_type=$1
     variant=$2
-    cmake_flags=$3
+    cmake_flags="${@:3}"
 
     tmp_root=${TMPDIR:-/tmp}/$basename/$build_type-$variant
     build_root=$tmp_root/build

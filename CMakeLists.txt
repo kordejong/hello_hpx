@@ -84,14 +84,6 @@ if(APEX_WITH_OTF2)
 endif()
 
 
-
-
-
-
-
-
-
-
 FetchContent_Declare(hpx
     GIT_REPOSITORY ${hpx_repository}
 

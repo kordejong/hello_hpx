@@ -86,13 +86,7 @@ endif()
 
 FetchContent_Declare(hpx
     GIT_REPOSITORY ${hpx_repository}
-
-    # GIT_TAG 81747589077ddd78ea9de683f80a3b5663501b04  # 1.4.0-rc1
-
-    # build_all.sh succeeds when using this commit
-    # GIT_TAG d3954a10947
-
-    GIT_TAG 1e3cfa0  # 1.4.0-rc2
+    GIT_TAG bbc3ad7  # HPX-1.4.0-rc2 + APEX link fix
 )
 
 FetchContent_MakeAvailable(hpx)

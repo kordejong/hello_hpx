@@ -11,6 +11,7 @@ option(${CMAKE_PROJECT_NAME}_BUILD_OTF2
     "If OTF2 is required, build it instead of relying on the environment"
     FALSE)
 
+set(HPX_USE_CMAKE_CXX_STANDARD ON CACHE BOOL "")
 set(HPX_WITH_CXX17 ON CACHE BOOL "")
 
 if(${CMAKE_PROJECT_NAME}_REPOSITORY_CACHE AND
@@ -86,7 +87,10 @@ endif()
 
 FetchContent_Declare(hpx
     GIT_REPOSITORY ${hpx_repository}
-    GIT_TAG bbc3ad7  # HPX-1.4.0-rc2 + APEX link fix
+    # GIT_TAG 1.4.1
+    # https://github.com/STEllAR-GROUP/hpx/pull/4311
+    # 1.4.1 + APEX fixes
+    GIT_TAG 9955e8e
 )
 
 FetchContent_MakeAvailable(hpx)

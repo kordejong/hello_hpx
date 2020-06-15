@@ -87,10 +87,7 @@ endif()
 
 FetchContent_Declare(hpx
     GIT_REPOSITORY ${hpx_repository}
-    # GIT_TAG 1.4.1
-    # https://github.com/STEllAR-GROUP/hpx/pull/4311
-    # 1.4.1 + APEX fixes
-    GIT_TAG 9955e8e
+    GIT_TAG 47d7bebd27a  # Master at 20200612
 )
 
 FetchContent_MakeAvailable(hpx)

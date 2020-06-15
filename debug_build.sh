@@ -6,10 +6,10 @@ build_type=Debug
 
 source build_common.sh
 rebuild_project $build_type default ""
-# rebuild_project $build_type tests_and_examples "
-#     -HPX_WITH_PARCELPORT_TCP:BOOL=ON
-#     -HPX_WITH_PARCELPORT_MPI:BOOL=ON
-#     -HPX_WITH_PARCELPORT_MPI_MULTITHREADED:BOOL=ON
-#     -DHPX_WITH_TESTS:BOOL=ON
-#     -DHPX_WITH_EXAMPLES:BOOL=ON
-# "
+rebuild_project $build_type tests_and_examples "
+    -HPX_WITH_PARCELPORT_TCP:BOOL=ON
+    -HPX_WITH_PARCELPORT_MPI:BOOL=ON
+    -HPX_WITH_PARCELPORT_MPI_MULTITHREADED:BOOL=ON
+    -DHPX_WITH_TESTS:BOOL=ON
+    -DHPX_WITH_EXAMPLES:BOOL=ON
+"

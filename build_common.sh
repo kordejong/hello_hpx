@@ -1,30 +1,37 @@
-#!/usr/bin/env bash
-
 basename=hello_hpx
 repository_cache=$HOME/development/repository  # Optional
-source_root="$(cd "$(dirname "$BASH_SOURCE")"; pwd -P)"
 
 
 function remove_build()
 {
-    build_type=$1
-    variant=$2
+    tmp_root=$1
 
-    tmp_root=${TMPDIR:-/tmp}/$basename/$build_type-$variant
     build_root=$tmp_root/build
 
     rm -fr $build_root
 }
 
 
+# function checkout_sources()
+# {
+#     tmp_root=${TMPDIR:-/tmp}
+#     source_root=$tmp_root/source
+# 
+#     if [[ ! -d $tmp_root/hpx ]]; do
+#         git clone $repository_cache/hpx $tmp_root
+#     else
+#         echo "Using existing clone of HPX in $tmp_root/hpx"
+# }
+
+
 function build_project()
 {
-    build_type=$1
-    variant=$2
-    cmake_flags="${@:3}"
+    source_root=$1
+    build_root=$2
+    build_type=$3
+    variant=$4
+    cmake_flags="${@:5}"
 
-    tmp_root=${TMPDIR:-/tmp}/$basename/$build_type-$variant
-    build_root=$tmp_root/build
     default_cmake_flags="
         -HPX_WITH_MALLOC:STRING=tcmalloc
         -HPX_WITH_HWLOC:BOOL=ON
@@ -43,8 +50,53 @@ function build_project()
 }
 
 
+function build_project_fetch_content()
+{
+    tmp_root=$1
+    build_type=$2
+    variant=$3
+
+    source_root="$(cd "$(dirname "$BASH_SOURCE")"; pwd -P)"
+    build_root=$tmp_root/build
+
+    build_project $source_root $build_root $*
+}
+
+
+function build_project_classic()
+{
+    tmp_root=$1
+    build_type=$2
+    variant=$3
+
+    source_root=$tmp_root/source
+    build_root=$tmp_root/build
+
+    git clone $repository_cache/hpx $source_root
+    cd $source_root/hpx
+    git checkout 9955e8e
+
+    build_project $source_root $build_root $*
+}
+
+
 function rebuild_project()
 {
-    remove_build $*
-    build_project $*
+    build_type=$1
+    variant=$2
+    tmp_root=${TMPDIR:-/tmp}/${basename}-fetch_content/$build_type-$variant
+
+    remove_build $tmp_root
+    build_project_fetch_content $tmp_root $*
+}
+
+
+function rebuild_project_classic()
+{
+    build_type=$1
+    variant=$2
+    tmp_root=${TMPDIR:-/tmp}/${basename}-classic/$build_type-$variant
+
+    remove_build $tmp_root
+    build_project_classic $tmp_root $*
 }

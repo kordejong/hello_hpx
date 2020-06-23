@@ -87,7 +87,7 @@ endif()
 
 FetchContent_Declare(hpx
     GIT_REPOSITORY ${hpx_repository}
-    GIT_TAG 47d7bebd27a  # Master at 20200612
+    GIT_TAG 001c1bcc936  # Master at 20200619
 )
 
 FetchContent_MakeAvailable(hpx)

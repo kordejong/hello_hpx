@@ -16,4 +16,4 @@ Last time built successfully:
 
 | Date | Commit |
 |------|--------|
-| 202006xx | xx |
+| 20200619 | 001c1bcc936 |

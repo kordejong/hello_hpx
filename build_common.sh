@@ -4,11 +4,13 @@ repository_cache=$HOME/development/repository  # Optional
 
 function remove_build()
 {
-    tmp_root=$1
+    tmp_root="$1"
 
-    build_root=$tmp_root/build
+    build_root="$tmp_root/build"
 
-    rm -fr $build_root
+    if [ -d "$build_root" ]; then
+        rm -r "$build_root"
+    fi
 }
 
 
@@ -50,6 +52,14 @@ function build_project()
 }
 
 
+function clean_project()
+{
+    build_root=$1
+
+    cmake --build $build_root --target clean
+}
+
+
 function build_project_fetch_content()
 {
     tmp_root=$1
@@ -60,6 +70,7 @@ function build_project_fetch_content()
     build_root=$tmp_root/build
 
     build_project $source_root $build_root $*
+    clean_project $build_root
 }
 
 
@@ -77,6 +88,7 @@ function build_project_classic()
     git checkout 9955e8e
 
     build_project $source_root $build_root $*
+    clean_project $build_root
 }
 
 

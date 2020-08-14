@@ -84,10 +84,11 @@ if(APEX_WITH_OTF2)
     endif()
 endif()
 
+find_package(Boost REQUIRED COMPONENTS filesystem)
 
 FetchContent_Declare(hpx
     GIT_REPOSITORY ${hpx_repository}
-    GIT_TAG 57f2f7671b9  # 20200709
+    GIT_TAG 1.5.0-rc1
 )
 
 FetchContent_MakeAvailable(hpx)

@@ -32,11 +32,12 @@ function build_project()
     build_root=$2
     build_type=$3
     variant=$4
-    cmake_flags="${@:5}"
+    shift 4
+    cmake_flags=$*
 
     default_cmake_flags="
-        -HPX_WITH_MALLOC:STRING=tcmalloc
-        -HPX_WITH_HWLOC:BOOL=ON
+        -DHPX_WITH_MALLOC:STRING=tcmalloc
+        -DHPX_WITH_HWLOC:BOOL=ON
     "
 
     mkdir -p `dirname $build_root`
@@ -65,11 +66,12 @@ function build_project_fetch_content()
     tmp_root=$1
     build_type=$2
     variant=$3
+    shift 3
 
     source_root="$(cd "$(dirname "$BASH_SOURCE")"; pwd -P)"
     build_root=$tmp_root/build
 
-    build_project $source_root $build_root $*
+    build_project $source_root $build_root $build_type $variant $*
     clean_project $build_root
 }
 
@@ -79,15 +81,16 @@ function build_project_classic()
     tmp_root=$1
     build_type=$2
     variant=$3
+    shift 3
 
     source_root=$tmp_root/source
     build_root=$tmp_root/build
 
     git clone $repository_cache/hpx $source_root
     cd $source_root/hpx
-    git checkout 9955e8e
+    git checkout 9955e8e  # TODO
 
-    build_project $source_root $build_root $*
+    build_project $source_root $build_root $build_type $variant $*
     clean_project $build_root
 }
 
@@ -96,10 +99,12 @@ function rebuild_project()
 {
     build_type=$1
     variant=$2
+    shift 2
+
     tmp_root=${TMPDIR:-/tmp}/${basename}-fetch_content/$build_type-$variant
 
     remove_build $tmp_root
-    build_project_fetch_content $tmp_root $*
+    build_project_fetch_content $tmp_root $build_type $variant $*
 }
 
 
@@ -107,8 +112,10 @@ function rebuild_project_classic()
 {
     build_type=$1
     variant=$2
+    shift 2
+
     tmp_root=${TMPDIR:-/tmp}/${basename}-classic/$build_type-$variant
 
     remove_build $tmp_root
-    build_project_classic $tmp_root $*
+    build_project_classic $tmp_root $build_type $variant $*
 }

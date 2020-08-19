@@ -88,7 +88,13 @@ find_package(Boost REQUIRED COMPONENTS filesystem)
 
 FetchContent_Declare(hpx
     GIT_REPOSITORY ${hpx_repository}
-    GIT_TAG 1.5.0-rc1
+    GIT_TAG 1.5.0-rc2
 )
 
 FetchContent_MakeAvailable(hpx)
+
+add_executable(my_hpx_program main.cpp)
+target_link_libraries(my_hpx_program
+    HPX::hpx
+    HPX::wrap_main
+    HPX::iostreams_component)

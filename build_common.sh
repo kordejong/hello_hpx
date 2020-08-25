@@ -9,7 +9,7 @@ function remove_build()
     build_root="$tmp_root/build"
 
     if [ -d "$build_root" ]; then
-        rm -r "$build_root"
+        rm -fr "$build_root"
     fi
 }
 

@@ -14,7 +14,8 @@ It will start a number of builds and dump compiler output to text files.
 
 Last time built successfully:
 
-| Date | Commit |
+| Date | Commit / tag |
 |------|--------|
-| 20200619 | 001c1bcc936 |
+| 20200828 | 1.5.0-rc3 |
 | 20200709 | 57f2f7671b9 |
+| 20200619 | 001c1bcc936 |

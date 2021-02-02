@@ -88,7 +88,7 @@ find_package(Boost REQUIRED COMPONENTS filesystem)
 
 FetchContent_Declare(hpx
     GIT_REPOSITORY ${hpx_repository}
-    GIT_TAG 1.5.0-rc3
+    GIT_TAG 1.6.0-rc1
 )
 
 FetchContent_MakeAvailable(hpx)

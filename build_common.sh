@@ -49,7 +49,7 @@ function build_project()
         $default_cmake_flags \
         -S $source_root \
         -B $build_root
-    cmake --build $build_root
+    cmake --build $build_root --verbose --parallel 4
 }
 
 
